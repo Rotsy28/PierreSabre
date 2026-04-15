@@ -41,6 +41,13 @@ public class Humain {
 		parler("Mmm, un bon verre de " + boisson+ "! GLOUPS!");
 	}
 	
+	protected int perdreToutArgent() {
+	    int temp = argent;
+	    argent = 0;
+	    return temp;
+	}
+
+	
 	public void acheter(String bien, int prix) {
 		if (argent >= prix) {
 			parler("J'ai " + argent + " sous en poche. Je vais pouvoir m'offir un " + bien + " à " + prix + " sous.");
