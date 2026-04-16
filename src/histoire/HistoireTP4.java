@@ -17,7 +17,7 @@ public class HistoireTP4 {
 		prof.acheter("kimono", 50);
 		
 		System.out.println("\n");
-		Commercant marco = new Commercant("Marco", "thé", 20);
+		Commercant marco = new Commercant("Marco", 20);
 		marco.direBonjour();
 		marco.seFaireExtorquer();
 		marco.recevoir(15);
@@ -36,6 +36,17 @@ public class HistoireTP4 {
 		
 		System.out.println();
 		roro.provoquer(yaku);
+		
+		System.out.println();
+		Commercant chonin = new Commercant("Chonin", 40);
+		Commercant kumi = new Commercant("Kumi", 10);
+		marco.faireConnaisanceAvec(roro);
+		marco.faireConnaisanceAvec(yaku);
+		marco.faireConnaisanceAvec(chonin);
+		marco.faireConnaisanceAvec(kumi);
+		marco.listerConnaissance();
+		roro.listerConnaissance();
+		yaku.listerConnaissance();
 		
 	}
 }
